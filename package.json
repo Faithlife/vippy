@@ -1,26 +1,38 @@
-{ "name" : "vippy"
-, "description" : "Virtual IP Management and Failover"
-, "keywords" : [ "vip", "ha" ]
-, "version" : "0.0.11"
-, "preferGlobal" : true
-, "author" : { "name" : "Theo Schlossnagle" }
-, "repository" :
-  { "type" : "git"
-  , "url" : "git://github.com/postwait/vippy.git"
-  }
-, "bugs" :
-  { "url" : "http://github.com/postwait/vippy/issues"
-  }
-, "main" : "./index"
-, "bin":
-  { "vippyd": "./vippyd.js"
-  , "vippyctl": "./ctl.js"
-  }
-, "dependencies" : { "ife": ">=0.0.9", "posix": ">=1.0.0" }
-, "engines" : { "node" : "0.8 || 0.10" }
-, "licenses" :
-  [ { "type" : "BSD"
-    , "url" : "http://github.com/postwait/vippy/raw/master/vippy"
+{
+  "name": "@faithlife/vippy",
+  "description": "Virtual IP Management and Failover",
+  "keywords": [
+    "vip",
+    "ha"
+  ],
+  "version": "0.0.13",
+  "preferGlobal": true,
+  "author": {
+    "name": "Theo Schlossnagle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/faithlife/vippy.git"
+  },
+  "bugs": {
+    "url": "http://github.com/faithlife/vippy/issues"
+  },
+  "main": "./index",
+  "bin": {
+    "vippyd": "./vippyd.js",
+    "vippyctl": "./ctl.js"
+  },
+  "dependencies": {
+    "@faithlife/node-ife": ">=0.0.13",
+    "posix": ">=1.0.0"
+  },
+  "engines": {
+    "node": "9.2.0"
+  },
+  "licenses": [
+    {
+      "type": "BSD",
+      "url": "http://github.com/faithlife/vippy/raw/master/vippy"
     }
   ]
 }
